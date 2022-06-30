@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Set URL -->
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@srvoptibbddjava02.optimissa.into:31511:xe</property>
+
+		<!-- Set User Name -->
+		<!-- <property name = "hibernate.connection.username">INTAKE</property> -->
+		<property name="hibernate.connection.username">LUIS</property>
+
+		<!-- Set Password -->
+		<!-- <property name = "hibernate.connection.password">INTAKE</property> -->
+		<property name="hibernate.connection.password">LUIS</property>
+
+		<!-- Set Driver Name -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+
+		<!-- <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> -->
+
+		<property name="hibernate.show_sql">true</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping class="com.Song.Song" />
+		<mapping class="com.Planta.Planta" />
+		<mapping class="com.Empleado.Empleado" />
+		<mapping class="com.Bushes.Bush" />
+		<mapping class="com.Habitat.Habitat" />
+		<mapping class="com.Compatibles.Compatibles" />
+		<mapping class="com.LeafType.LeafType" />
+		<mapping class="com.Trees.Tree" />
+		<mapping class="com.Location.Location" />
+		<mapping class="com.Flora.Flora" />
+
+	</session-factory>
+</hibernate-configuration>
